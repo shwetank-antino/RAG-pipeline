@@ -1,0 +1,46 @@
+{
+  "name": "rag-pipeline",
+  "version": "1.0.0",
+  "description": "demo-pipleine to learn RAG implementation",
+  "homepage": "https://github.com/shwetank-antino/RAG-pipeline#readme",
+  "bugs": {
+    "url": "https://github.com/shwetank-antino/RAG-pipeline/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shwetank-antino/RAG-pipeline.git"
+  },
+  "license": "ISC",
+  "author": "Shwetank Tripathi",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "worker": "node src/workers/ingestion.worker.js"
+  },
+  "dependencies": {
+    "@langchain/community": "^1.1.10",
+    "@langchain/core": "^1.1.18",
+    "@langchain/google-genai": "^2.1.14",
+    "@langchain/openai": "^1.2.4",
+    "@langchain/qdrant": "^1.0.1",
+    "@langchain/textsplitters": "^1.0.1",
+    "@qdrant/js-client-rest": "^1.16.2",
+    "bullmq": "^5.67.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "ioredis": "^5.9.2",
+    "multer": "^2.0.2",
+    "pdf-parse": "^1.1.4",
+    "redis": "^5.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^25.0.10"
+  }
+}
